@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:id="@+id/tvBusNames"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/tvNum"
+            android:gravity="center_vertical"
+            android:text="69路/3路"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/triangle" />
+
+        <TextView
+            android:id="@+id/tvNum"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:text="01" />
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/tvDetail"
+        android:layout_width="match_parent" 
+        android:layout_height="20dp"
+        android:layout_marginLeft="45dp"
+        android:textColor="#999999"
+        android:text="33分钟/3.3公里"
+        />
+    
+</LinearLayout>

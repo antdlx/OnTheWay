@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing2" >
+
+
+     <RelativeLayout
+        android:id="@+id/ll_ydtvtou"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0000ff" >
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="移动电视屏报修"
+            android:textColor="#ffffff"
+            android:textSize="21dp" />
+    </RelativeLayout>
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_bigpicture"
+            android:layout_below="@+id/ll_ydtvtou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bigpicture" />
+
+
+    <TextView
+        android:id="@+id/tv_dianji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_mybaoxiu"
+       	android:layout_toRightOf="@+id/iv_guzhangpicture"
+        android:background="@drawable/biankuang4"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:clickable="true"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:text="+点击上传故障图片"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/ll_guzhangxianlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dp"
+		android:layout_below="@+id/iv_guzhangpicture"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="*故障线路"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:textSize="20dip" />
+
+        <EditText
+            android:id="@+id/et_xianlu"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/biankuang5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_phone"
+        android:layout_below="@+id/ll_guzhangxianlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="*联系电话"
+            android:textColor="#ffffff"
+            android:textSize="20dip" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="190dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/biankuang5"
+            android:numeric="integer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_below="@+id/ll_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="27dp"
+		android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="故障详情"
+            android:textColor="#ffffff"
+            android:textSize="20dip" />
+
+        <EditText
+            android:id="@+id/et_detales"
+            android:layout_width="190dip"
+            android:layout_height="60dip"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/biankuang6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_myfriends"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1.0"
+            android:background="#5dffffff"
+            android:text="我的好友"
+            android:textColor="#ffffff"
+            android:textSize="16dip" />
+
+        <Button
+            android:id="@+id/btn_personalcenter"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_marginLeft="4dip"
+            android:layout_weight="1.0"
+            android:background="#5dffffff"
+            android:text="个人中心"
+            android:textColor="#ffffff"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_fabubaoxiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dip"
+		android:layout_below="@+id/linearLayout1"
+		android:layout_marginTop="20dp"
+        android:background="@drawable/fabu"
+        android:layout_centerHorizontal="true"/>"
+
+    <LinearLayout
+        android:id="@+id/ll_mybaoxiu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/iv_bigpicture"
+        android:background="#59000000"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/mybaoxiu"
+            android:gravity="center_vertical"
+            android:padding="5dip"
+            android:text=" 我的报修"
+            android:textColor="#b8ffffff"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/tv_seeall"
+            android:layout_weight="0.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="5dip"
+            android:text="查看全部&lt;&lt;&lt;"
+            android:textColor="#5fffffff"
+            android:textSize="10dip" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_guzhangpicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/ll_mybaoxiu"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/biankuang3" />
+
+</RelativeLayout>

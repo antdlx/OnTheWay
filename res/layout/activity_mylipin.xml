@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+    <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#c9ffffff"/>
+    <RelativeLayout
+        android:id="@+id/rl_mylipin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#251e7e" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的礼品"
+            android:textColor="#ffffff"
+            android:textSize="21dp" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back" />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_mylipin"
+        android:dividerHeight="20dp"
+        android:layout_below="@+id/rl_mylipin"
+        android:background="#00ffffff"/>
+
+</RelativeLayout>

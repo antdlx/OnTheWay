@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing2" >
+
+     <RelativeLayout
+        android:id="@+id/ll_buspingfentou"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0000ff" >
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="公交评分"
+            android:textColor="#ffffff"/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_myfriends"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1.0"
+            android:background="#5dffffff"
+            android:text="我的好友"
+            android:textColor="#ffffff"
+            android:textSize="16dip" />
+
+        <Button
+            android:id="@+id/btn_personalcenter"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="4dip"
+            android:background="#5dffffff"
+            android:text="个人中心"
+            android:textColor="#ffffff"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spin_choosebus"
+        android:layout_width="220dip"
+        android:layout_height="30dip"
+        android:layout_below="@+id/ll_buspingfentou"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/choosebus" />
+    <LinearLayout
+        android:id="@+id/ll_choosedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/spin_choosebus"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_centerHorizontal="true">
+        
+        <Spinner
+            android:id="@+id/spin_choosemonth"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.0"
+            android:background="@drawable/choosedate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="月"
+            android:textColor="#ffffff"
+            android:textSize="20dip"
+            android:layout_gravity="bottom"/>
+         <Spinner
+            android:id="@+id/spin_chooseday"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.0"
+            android:background="@drawable/choosedate"/>
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="日"
+            android:textColor="#ffffff"
+            android:textSize="20dip"
+            android:layout_gravity="bottom"/>
+         <Spinner
+            android:id="@+id/spin_choosehour"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.0"
+            android:background="@drawable/choosedate"/>
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="时"
+            android:textColor="#ffffff"
+            android:textSize="20dip"
+            android:layout_gravity="bottom"/>
+         
+        
+    </LinearLayout>
+
+    
+    <Button
+                  android:id="@+id/btn_fabu"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/tijiao"
+                  android:layout_below="@+id/ll_pingjia"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginTop="10dip" />
+
+    <LinearLayout
+        android:id="@+id/ll_pingjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_choosedate"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="车内卫生情况  : "
+                android:textColor="#ffffff"
+                android:textSize="15dip" />
+
+            <RadioGroup
+                android:id="@+id/rg_busenvironment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_hao1"
+                    android:text="好"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+
+                <RadioButton
+                    android:id="@+id/rb_zhong1"
+                    android:text="中"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+
+                <RadioButton
+                    android:id="@+id/rb_cha1"
+                    android:text="差"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="车内拥挤情况  : "
+                android:textColor="#ffffff"
+                android:textSize="15dip" />
+
+            <RadioGroup
+                android:id="@+id/rg_busyongji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_hao2"
+                    android:text="好"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+
+                <RadioButton
+                    android:id="@+id/rb_zhong2"
+                    android:text="中"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+
+                <RadioButton
+                    android:id="@+id/rb_cha2"
+                    android:text="差"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="公交司机态度  : "
+                android:textColor="#ffffff"
+                android:textSize="15dip" />
+
+            <RadioGroup
+                android:id="@+id/rg_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_hao3"
+                    android:text="好"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+
+                <RadioButton
+                    android:id="@+id/rb_zhong3"
+                    android:text="中"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+
+                <RadioButton
+                    android:id="@+id/rb_cha3"
+                    android:text="差"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="等待时间长度 : "
+                android:textColor="#ffffff"
+                android:textSize="15dip" />
+
+            <EditText
+                android:id="@+id/et_minutes"
+                android:layout_width="40dip"
+                android:layout_height="20dip"
+                android:layout_marginLeft="30dip"
+                android:background="@drawable/shijiankuang"
+                android:numeric="integer"
+                android:textColor="#ffffff" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:text="分钟"
+                android:textColor="#ffffff"
+                android:textSize="15dip" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="对该路线具体建议 : "
+            android:textColor="#ffffff"
+            android:textSize="15dip" />
+
+        <EditText
+            android:id="@+id/et_jianyi"
+            android:layout_width="270dip"
+            android:layout_height="70dip"
+            android:background="@drawable/dabiankuang"
+            android:gravity="top|left"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</RelativeLayout>

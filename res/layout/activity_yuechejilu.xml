@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing" >
+    <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#c9ffffff"/>
+	<LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="#474859"
+       android:orientation="horizontal"
+       android:id="@+id/ll_biaoti3">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:gravity="center"
+           android:text="拼车约车记录"
+           android:textColor="#ffffff"
+           android:textSize="21dp" />
+	</LinearLayout>
+    <ImageButton
+           android:id="@+id/ib_back"
+           android:layout_width="16dp"
+           android:layout_height="21dp"
+           android:background="@drawable/arraw2"
+           android:layout_gravity="center_vertical"
+           android:layout_marginLeft="21dp"
+           android:layout_marginTop="14dp"
+           android:clickable="true"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_yuechejilu"
+        android:dividerHeight="20dp"
+        android:layout_below="@+id/ll_biaoti3"
+        android:background="#00ffffff"/>   
+
+
+</RelativeLayout>

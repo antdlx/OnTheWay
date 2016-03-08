@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@drawable/background" >
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#66000000" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="意见反馈"
+                android:textColor="#ffffff"
+                android:textSize="21dp" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/back" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/search" />
+        </FrameLayout>
+    <EditText
+        android:id="@+id/etSuggID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入您的ID"
+        android:ems="10"
+        android:layout_margin="5dp"
+        >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/etSuggPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入您的手机号"
+        android:ems="10"
+        android:layout_margin="5dp"
+        >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/etSuggEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入您的邮箱"
+        android:ems="10"
+        android:layout_margin="5dp"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/etSuggestion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="请给我们您的宝贵意见"
+        android:gravity="top"
+        android:layout_margin="5dp"
+         >
+    </EditText>
+
+
+
+</LinearLayout>

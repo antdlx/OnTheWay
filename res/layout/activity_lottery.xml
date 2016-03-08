@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="@drawable/lotteryback" >
+    
+    <FrameLayout
+            android:id="@+id/lottery_fl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#66000000" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="幸运抽奖"
+                android:textColor="#ffffff"
+                android:textSize="21dp" />
+
+            <Button
+                android:id="@+id/lottery_btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/back" />
+
+            <Button
+                android:id="@+id/lottery_btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/search" />
+    </FrameLayout>、
+    
+    <RelativeLayout 
+        android:layout_below="@id/lottery_fl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_centerHorizontal="true"
+             android:text="@string/lottery_haveatry"
+             android:textColor="#ffffff"
+             android:textSize="21dp" />
+        
+    </RelativeLayout>
+                 
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <ImageView
+            android:id="@+id/ivlottery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/choujiang_mid"
+            android:layout_centerInParent="true" />
+        
+        <ImageView
+            android:id="@+id/choujiangiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/choujiangcircle"
+            android:layout_centerInParent="true" />
+        
+    </RelativeLayout>
+
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/lottery_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1.0"
+            android:background="#5dffffff"
+            android:text="我的好友"
+            android:textColor="#ffffff"
+            android:textSize="16dip" />
+
+        <Button
+            android:id="@+id/lottery_personalcenter"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="4dip"
+            android:background="#5dffffff"
+            android:text="个人中心"
+            android:textColor="#ffffff"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+
+</RelativeLayout>

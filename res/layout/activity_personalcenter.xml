@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_tupian"
+            android:layout_width="match_parent"
+            android:layout_height="160dip"
+            android:background="@drawable/tupian"
+            android:clickable="true"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="#bdffffff"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_jibenxinxi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/tv_jibenxinxi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:textColor="#000000"
+                     />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_sexal"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:paddingRight="20dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:orientation="vertical"
+                android:layout_gravity="right">
+            <TextView
+                android:id="@+id/tv_jibenxinxitwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="积分 ：  600" />
+             <TextView
+                android:id="@+id/tv_jibenxinxithree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="信誉度：" />
+             </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_jilu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#a5ffffff"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/jiantou"
+            android:text="拼车约车记录"
+            android:textSize="15dip" />
+
+        <Button
+            android:id="@+id/btn_luxian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#a5ffffff"
+            android:drawableRight="@drawable/jiantou"
+             android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="常用路线 "
+            android:textSize="15dip" />
+
+        <Button
+            android:id="@+id/btn_lipin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#a5ffffff"
+            android:drawableRight="@drawable/jiantou"
+             android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="查看我的礼品"
+            android:textSize="15dip" />
+
+        <Button
+            android:id="@+id/btn_xiugai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#a5ffffff"
+            android:drawableRight="@drawable/jiantou"
+             android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="修改基本信息"
+            android:textSize="15dip" />
+
+        <Button
+            android:id="@+id/btn_fanhui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#a5ffffff"
+            android:drawableRight="@drawable/jiantou"
+             android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="返回主界面"
+            android:textSize="15dip" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_myfriends"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_weight="1.0"
+                android:background="#5dffffff"
+                android:text="我的好友"
+                android:textColor="#ffffff"
+                android:textSize="16dip" />
+
+            <Button
+                android:id="@+id/btn_personalcenter"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginLeft="4dip"
+                android:layout_weight="1.0"
+                android:background="#5dffffff"
+                android:text="个人中心"
+                android:textColor="#ffffff"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_touxiang"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="125dip"
+        android:background="@drawable/touxiang"
+        android:clickable="true"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>
